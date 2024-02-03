@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    background-color: #040D12;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.game-area{
+    width: 600px;
+    height: 85vh;
+    background-color: #93B1A6;
+    box-shadow: 2px 2px 4px #000000bd, -2px -2px 4px rgb(255, 255, 255, 0.712);
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.character-container{
+    width: 150px;
+    height: 150px;
+    bottom: 0;
+    left: 150px;
+    position: absolute;
+    filter: drop-shadow(2px 0px 3px rgba(0, 0, 0, 0.63));
+
+}
+
+.character-container .character{
+    width: 150px; 
+    height: 150px;
+    background-image: url("images/chad character 170.png");
+    margin: auto;
+}
+
+
+.element-container{
+    width: 150px;
+    position: absolute;
+    top: -100px;
+    left: 0px;
+}
+
+.element-container .element-text{
+    background-color: #183D3D;
+    padding: 12px 15px;
+    width: 140px;
+    margin: auto;
+    font-size: 25px;
+    text-align: center;
+    border: 2px solid #000;
+    border-radius: 30px;
+    color: white;
+}
+
+.animation{
+    animation-name: element-animation;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes element-animation{
+    0%{
+        top: -100px;
+    }
+    100%{
+        top: 756px;
+    }
+
+}
+
+.dashboard{
+    height: 85vh;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard .first-container{
+    font-size: 35px;
+    text-align: center;
+    letter-spacing: px;
+    word-spacing: 5px;
+    text-transform: uppercase;
+    width: 500px;
+    background-color: #93B1A6;
+    padding: 18px;
+    border-radius: 40px;
+    box-shadow: 2px 2px 4px #000000bd, -2px -2px 4px rgb(255, 255, 255, 0.712);
+
+}
+
+.dashboard .second-container{
+    height: 400px;
+    width: 500px;
+    box-shadow: 2px 2px 4px #000000bd, -2px -2px 4px rgb(255, 255, 255, 0.712);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #93B1A6;
+    border-radius: 20px;
+}
+
+.second-container .score-container{
+    width: 400px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.score-container div{
+    width: 200px;
+    text-align: center;
+}
+
+.score-container .score-heading{
+    font-size: 30px;
+    letter-spacing: 5px;
+    font-weight: 500;
+}
+
+.score-container .score-box{
+    padding: 5px 0;
+    font-size: 20px;
+    background-color: #183D3D;
+    box-shadow: 2px 2px 4px #000000bd, -2px -2px 4px rgb(255, 255, 255, 0.712);
+    margin-bottom: 10px;
+    border-radius: 20px;
+    color: white;
+}
+
+.second-container .starting-text{
+    font-size: 23px;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    margin-bottom: 100px;
+    display: none;
+}
+
+.second-container .btn{
+    padding: 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    box-shadow: 2px 2px 4px #000000bd, -2px -2px 4px rgb(255, 255, 255, 0.712);
+    letter-spacing: 2px;
+    font-size: 25px;
+    font-weight: bolder;
+    background-color: #183D3D;
+    margin-bottom: 100px;
+    border-radius: 25px;
+    cursor: pointer;
+    color: white;
+}
