@@ -1,1 +1,1 @@
-# the-chad--game
+# the-chad-game
